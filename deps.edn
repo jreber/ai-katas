@@ -1,0 +1,6 @@
+{:deps {dev.langchain4j/langchain4j        {:mvn/version "1.6.0"}
+        dev.langchain4j/langchain4j-ollama {:mvn/version "1.6.0"}
+        dev.langchain4j/langchain4j-mcp    {:mvn/version "1.6.0-beta12"}
+        cheshire/cheshire {:mvn/version "5.13.0"}
+        io.github.cdimascio/dotenv-java {:mvn/version "3.0.2"}}}
+

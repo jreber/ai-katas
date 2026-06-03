@@ -2,5 +2,11 @@
         dev.langchain4j/langchain4j-ollama {:mvn/version "1.6.0"}
         dev.langchain4j/langchain4j-mcp    {:mvn/version "1.6.0-beta12"}
         cheshire/cheshire {:mvn/version "5.13.0"}
-        io.github.cdimascio/dotenv-java {:mvn/version "3.0.2"}}}
+        io.github.cdimascio/dotenv-java {:mvn/version "3.0.2"}
+        io.github.cognitect-labs/test-runner {:git/tag "v0.5.1" :git/sha "dfb30dd"}
+        org.clojure/test.check {:mvn/version "1.1.0"}
+        lambdaisland/kaocha {:mvn/version "1.87.1366"}}
+ :aliases {:test {:extra-paths ["test"]
+                  :main-opts ["-m" "cognitect.test-runner"]
+                  :exec-fn cognitect.test-runner.api/test}}}
 
